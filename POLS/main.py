@@ -17,14 +17,10 @@ cos = 0.8
 
 poi_amount = poi.shape[0]
 
-# peoples = np.random.choice(a=range(poi_amount), size=people_num, replace=True, p=None)
-# np.savetxt("real_position/peo_100000.txt", peoples)
-# people_filename = "peo_site/" + str(epsilon) + "/peo_" + str(epsilon) + "_" + str(people_num) + "_" + str(tim) + ".txt"
 people_filename = "real_position/peo_500000.txt"
 peoples = np.loadtxt(people_filename, dtype=int)
 
 new_peoples = np.zeros(people_num, dtype=np.int32)
-# new_peoples = np.loadtxt("time==18.txt", dtype=int)
 ed = distanceOfEpsilon(epsilon)
 
 
